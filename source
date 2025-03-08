@@ -7,7 +7,7 @@ pcall(function() getgenv().IY_LOADED = true end)
 
 local cloneref = cloneref or function(o) return o end
 Players = cloneref(game:GetService("Players"))
-COREGUI = Players:FindFirstChildWhichIsA("PlayerGui")
+COREGUI = Players.PlayerGui
 
 if not game:IsLoaded() then
     local notLoaded = Instance.new("Message")
